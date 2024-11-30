@@ -11,8 +11,8 @@ Check out the [app demo](https://dmitriyrotaenko.github.io/librarium/).
 As a user, you can:
 
 - Add a book to the library via a dedicated book.
-- Mark the book as (non)read.
-- Remove the book from the library.
+- Mark a book as (non)read.
+- Remove a book from the library.
 - Access main actions from the keyboard ⌨️ 
 - Use the app on devices with smaller screens📱
 
