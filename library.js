@@ -2,7 +2,6 @@ import LibModel from "./LibModel.js";
 import LibView from "./LibView.js";
 import LibController from "./LibController.js";
 
-
 new LibController(
 	new LibModel([
 		{
