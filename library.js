@@ -1,6 +1,6 @@
-import LibModel from "./LibModel.js";
-import LibView from "./LibView.js";
-import LibController from "./LibController.js";
+import LibModel from "./mvc/LibModel.js";
+import LibView from "./mvc/LibView.js";
+import LibController from "./mvc/LibController.js";
 
 new LibController(
 	new LibModel([
