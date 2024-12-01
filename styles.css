@@ -87,7 +87,7 @@ button {
 	flex-direction: column;
 	padding: 2rem;
 	width: 30rem;
-	min-height: 20rem;
+	min-height: 15rem;
 	border-radius: 1.5rem;
 	-webkit-box-shadow: 0.625rem 0.625rem 4.44rem 0.06rem rgba(173,170,173,0.3);
 	-moz-box-shadow: 0.625rem 0.625rem 4.44rem 0.06rem rgba(173,170,173,0.3);
@@ -213,10 +213,11 @@ button {
 .book-form__status {
 	display: flex;
 	gap: 0.5rem;
-	width: fit-content;
 	flex-direction: row;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: stretch;
 	transition: outline-offset 150ms ease-in-out;
+	user-select: none;
 
 	&:has(.status__native-checkbox:focus-visible) {
 		outline: 0.2rem dashed var(--accent-color);
@@ -278,58 +279,65 @@ button {
 	border-radius: 50%;
 	border: none;
 	background-color: var(--accent-color);
-
-	&:hover {
-		background-color: var(--accent-color-darker);
-	}
 }
 
 .btn-primary {
 	background-color: var(--accent-color);
 	color: #ffffff;
-	&:hover {
-		background-color: var(--accent-color-darker);
-	}
 }
 
 .fragment {
 	margin-bottom: 0.5rem;
 }
 
-@media screen and (width <= 58rem) {
-	.books {
-		flex-wrap: wrap;
-	}
-}
-
-@media screen and (width <= 50rem) {
-
-	.app-container {
-		padding: 3rem 5rem;
-	}
+@media screen and (width <= 43rem) {
 
 	.title {
 		font-size: 3rem;
 	}
-}
 
-@media screen and (width <= 43rem) {
 	.book-form {
-		width: 90vw;
+		width: 80vw;
 	}
 
 	.app-container {
-		padding: 1rem 3rem;
+		padding: 2rem;
 	}
 }
 
 @media screen and (width <= 28rem) {
+
+	.title {
+		font-size: 2rem;
+		text-align: center;
+	}
+
 	.app-container {
 		padding: 1rem;
 	}
 
 	.book__actions {
 		justify-content: center;
+	}
+}
+
+@media (hover:none) {
+	.btn-touch {
+		outline: none;
+	}
+}
+
+@media (hover:hover) {
+	.open-dialog-btn {
+		&:hover {
+			background-color: var(--accent-color-darker);
+		}
+	}
+
+	.btn-primary {
+		&:hover {
+			background-color: var(--accent-color-darker);
+		}
 	}
 }
 
